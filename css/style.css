@@ -29,7 +29,8 @@
 
 .container-main{
     background-color: yellow;
-    
+    width: 85vw;
+    height: 80vh;
 }
 
 .container-footer{
