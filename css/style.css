@@ -4,22 +4,27 @@
     box-sizing: border-box;
 }
 
+.sidebar{
+    width: 15vw;
+    height: calc(100vh - 100px);
+    background-color: red;
+}
+
 .footer{
-    height: 10vh;
+    height: 100px;
     width: 100vw;
 }
 
 .main{
     width: 85vw;
-    height: 80vh;
+    height: 90vh;
+    height: calc(100vh - 100px);
 }
 
 /*Container*/
 
 .container-sidebar{
     background-color: red;
-    width: 15vw;
-    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,8 +35,8 @@
 
 .container-header{
     background-color: black;
-    height: 10vh;
-    width: 85vw;
+    /*height: 10vh;
+    width: 85vw;*/
     position: fixed;
     top: 0;
     right: 0;
@@ -62,22 +67,22 @@
 .row-footer{
     display: flex;
     justify-content: space-between;
-    height: 10vh;
+    /*height: 10vh;*/
 }
 
 .row{
-    height: 200px;
+    /*height: 200px;*/
 }
 
 /*Col*/
 
 .col-footer{
-    width: 15vw;
+    /*width: 15vw;*/
     background-color: blue;
 }
 
 .col-footer-large{
-    width: 30vw;
+    /*width: 30vw;*/
     background-color: blue;
 }
 
