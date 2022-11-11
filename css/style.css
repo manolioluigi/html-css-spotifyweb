@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Container*/
+
+.container-sidebar{
+    background-color: red;
+    width: 15vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.container-header{
+    background-color: black;
+    height: 10vh;
+    width: 85vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.container-main{
+    background-color: yellow;
+    
+}
+
+.container-footer{
+    background-color: cyan;
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+
+/*Row*/
+
+.row-sidebar{
+    display: flex;
+}
+
+.row-header{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+.row-footer{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+/*Col*/
+
+.col-footer{
+    width: 15vw;
+    background-color: blue;
+}
+
+.col-footer-large{
+    width: 30vw;
+    background-color: blue;
+}
+
+/*Content*/
+
+
+
+/*Misc*/
+
+
+
+/*Utility*/
+
+
+
+/*Media*/
