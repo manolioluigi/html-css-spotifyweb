@@ -5,51 +5,43 @@
 }
 
 .sidebar{
-    width: 15vw;
-    height: calc(100vh - 100px);
+    width: 200px;
     background-color: red;
 }
 
 .footer{
     height: 100px;
     width: 100vw;
+    background-color: cyan;
 }
 
 .main{
-    width: 85vw;
-    height: 90vh;
-    height: calc(100vh - 100px);
+    width: calc(100vw - 200px);
+    background-color: yellow;
+
 }
 
 /*Container*/
 
 .container-sidebar{
-    background-color: red;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: fixed;
-    left: 0;
-    top: 0;
 }
 
 .container-header{
     background-color: black;
-    /*height: 10vh;
-    width: 85vw;*/
-    position: fixed;
-    top: 0;
-    right: 0;
+    height: 100px;
 }
 
-.container-main{
-    background-color: yellow;
+.container{
+    display: flex;
+    height: calc(100vh - 100px);
 }
 
 .container-footer{
-    background-color: cyan;
-    position: fixed;
-    bottom: 0;
+    
 }
 
 /*Row*/
@@ -62,27 +54,35 @@
     display: flex;
     justify-content: flex-end;
     color: white;
+    height: 100%;
 }
 
 .row-footer{
     display: flex;
     justify-content: space-between;
-    /*height: 10vh;*/
+    height: 100px;
 }
 
-.row{
-    /*height: 200px;*/
+.row-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /*Col*/
 
+.col-header{
+    width: 200px;
+    background-color: green;
+}
+
 .col-footer{
-    /*width: 15vw;*/
+    width: 200px;
     background-color: blue;
 }
 
 .col-footer-large{
-    /*width: 30vw;*/
+    width: 30vw;
     background-color: blue;
 }
 
@@ -98,4 +98,37 @@
 
 
 
-/*Media*/
+/*Media query*/
+
+/*Medium*/
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+
+}
+
+/*Small*/
+
+@media screen and (max-width: 767px) and (min-width: 576px){
+    
+}
+
+/*Extra Small*/
+
+@media screen and (max-width: 575px) and (min-width: 0px){
+    
+    .sidebar{
+        width: 50px;
+    }
+
+    .main{
+        width: calc(100vw - 50px);
+
+    }
+
+}
+
+/*Height 350px*/
+
+/*@media screen and {
+
+}*/
