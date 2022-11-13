@@ -8,6 +8,7 @@
 .sidebar{
     width: 200px;
     background-color: black;
+    position: relative;
 }
 
 .footer{
@@ -15,12 +16,16 @@
     width: 100vw;
     background-color: rgb(40, 40, 40);
     color: white;
+    position: absolute;
+    bottom: 0;
+    z-index: 500;
 }
 
 .main{
     width: calc(100vw - 200px);
     background-color: rgb(20, 25, 34);
     overflow-y: auto;
+    padding-top: 80px;
 }
 
 /*Container*/
@@ -35,6 +40,10 @@
 .container-header{
     background-color: rgba(0, 0, 0, 0.5);
     height: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 200px);
 }
 
 .container{
@@ -90,6 +99,7 @@
 
 .col-header{
     width: 200px;
+    margin-right: 20px;
 }
 
 .col-footer{
@@ -100,7 +110,6 @@
 
 .col-footer-large{
     width: 30vw;
-    
 }
 
 .col{
@@ -124,8 +133,12 @@
 
 /*Misc*/
 
-.col-sidebar img{
+#logo{
     width: 130px;
+}
+
+#logo-small{
+    display: none;
 }
 
 .green-bar{
@@ -170,8 +183,8 @@
     max-width: 20%;
 }
 
-input[type=range]{
-    
+#footer-icons{
+    display: flex;
 }
 
 /*Utility*/
@@ -227,6 +240,10 @@ input[type=range]{
 
 .margin-5{
     margin: 5px;
+}
+
+.margin-2{
+    margin: 2px;
 }
 
 .margin-10{
@@ -334,11 +351,24 @@ input[type=range]{
     width: 50%;
 }
 
+.absolute-bottom{
+    position: absolute;
+    bottom: 0;
+}
+
+.overflow-y{
+    overflow-y: auto;
+}
+
 /*Media query*/
 
 /*Medium*/
 
 @media screen and (max-width: 991px) and (min-width: 768px){
+
+    .col-playlist{
+        min-width: calc( (100% - 50px) / 4 );
+    }
 
 }
 
@@ -346,6 +376,15 @@ input[type=range]{
 
 @media screen and (max-width: 767px) and (min-width: 576px){
     
+    .col-playlist{
+        min-width: calc( (100% - 30px) / 2 );
+    }
+
+    #footer-icons{
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 /*Extra Small*/
@@ -356,9 +395,44 @@ input[type=range]{
         width: 50px;
     }
 
+    .col-playlist{
+        min-width: calc( (100% - 30px) / 2 );
+    }
+
     .main{
         width: calc(100vw - 50px);
+    }
+    
+    .container-header{
+        width: calc(100% - 50px);
+    }
 
+    .sidebar span{
+        display: none;
+    }
+
+    #playlist{
+        display: none;
+    }
+
+    hr{
+        display: none;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    #logo-small{
+        display: block;
+    }
+
+    .col-footer{
+        width: 33%;
+    }
+
+    .col-footer-large{
+        width: 33%;
     }
 
 }

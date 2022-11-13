@@ -26,7 +26,8 @@
 
                         <!--Menu-->
                         <div class="padding-15">
-                            <img src="./img/logo.svg" alt="logo">
+                            <img src="./img/logo.svg" alt="logo" id="logo">
+                            <img src="./img/logo-small.svg" alt="logo-small" id="logo-small">
                         </div>
                         <div class="flex-row margin-top-bottom-5">
                             <div class="green-bar"></div>
@@ -44,13 +45,13 @@
                             <span class="font-size-12 padding-left-3">La tua libreria</span>
                         </div>
                         <!--Playlist-->
-                        <div class="padding-15">
+                        <div class="padding-15" id="playlist">
                             <span class="bold color-white font-size-14">PLAYLIST</span>
                             <div class="flex-row margin-bottom-10 margin-top-10">
                                 <div id="plus" class="font-size-30">+</div>
                                 <span class="font-size-13 color-gray bold padding-left-12">Crea Playlist</span>
                             </div>
-                            <div class="color-gray font-size-12 bold">
+                            <div class="color-gray font-size-12 bold overflow-y">
                                 <div class="margin-bottom-10">Nome Playlist</div>
                                 <div class="margin-bottom-10">Nome Playlist</div>
                                 <div class="margin-bottom-10">Nome Playlist</div>
@@ -67,7 +68,7 @@
 
                 <div class="row-sidebar">
 
-                    <div class="col-sidebar">
+                    <div class="col-sidebar absolute-bottom">
 
                         <div class="color-gray font-size-12 padding-left-15">
                             <i class="fa-solid fa-circle-info"></i>
@@ -310,8 +311,10 @@
                         <span class="bold font-size-12">Sinister</span>
                         <span class="font-size-10 color-gray">Brano Nome</span>
                     </div>
-                    <i class="fa-regular fa-heart color-gray margin-left-20  font-size-13"></i>
-                    <i class="fa-regular fa-folder color-gray margin-left-10  font-size-13"></i>
+                    <div id="footer-icons" class="margin-left-20">
+                    <i class="fa-regular fa-heart color-gray margin-2 font-size-13"></i>
+                    <i class="fa-regular fa-folder color-gray margin-2 font-size-13"></i>
+                    </div>
 
                 </div>
 
