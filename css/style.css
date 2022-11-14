@@ -188,6 +188,17 @@
     display: flex;
 }
 
+.play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 25;
+    color: white;
+    font-size: 400%;
+    opacity: 0;
+}
+
 /*Utility*/
 
 .padding-15{
@@ -279,6 +290,10 @@
     background-color: rgb(124, 124, 124);
 }
 
+.background-color-black{
+    background-color: black;
+}
+
 .font-size-10{
     font-size: 10px;
 }
@@ -361,11 +376,38 @@
     overflow-y: auto;
 }
 
+.height{
+    height: 100%;
+}
+
+.relative{
+    position: relative;
+}
+
 /*Hover*/
 
-.col-playlist img:hover{
+.col-playlist:hover img{
     filter: brightness(50%);
-    
+}
+
+.col-playlist:hover .play{
+    opacity: 1;
+}
+
+.color-gray:hover{
+    color: white;
+}
+
+input:hover{
+    accent-color: lime;
+}
+
+#upgrade:hover{
+    transform: scale(1.1);
+}
+
+.play-hover:hover{
+    transform: scale(1.1);
 }
 
 /*Media query*/
@@ -445,8 +487,10 @@
 
 }
 
-/*Height 350px*/
+/*Vertical*/
 
-/*@media screen and {
-
-}*/
+@media screen and (max-height: 630px){
+    .height{
+        height: 40%;
+    }
+}
