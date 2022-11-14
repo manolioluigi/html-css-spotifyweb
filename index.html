@@ -68,7 +68,7 @@
 
                 <div class="row-sidebar">
 
-                    <div class="col-sidebar absolute-bottom background-color-black">
+                    <div class="col-sidebar absolute-bottom background-color-black user">
 
                         <div class="color-gray font-size-12 padding-left-15">
                             <i class="fa-solid fa-circle-info"></i>
@@ -334,14 +334,16 @@
 
             <div class="row-footer">
 
-                <div class="col-footer">
+                <div class="col-footer footer-left">
 
+                    <div class="flex-row">
                     <img src="./img/sinister.jpeg" alt="sinister" class="margin-left-10">
                     <div class="flex-col margin-left-10">
                         <span class="bold font-size-12">Sinister</span>
                         <span class="font-size-10 color-gray">Brano Nome</span>
                     </div>
-                    <div id="footer-icons" class="margin-left-20">
+                    </div>
+                    <div id="footer-icons" class="margin-left-20 icons-center">
                     <i class="fa-regular fa-heart color-gray margin-2 font-size-13"></i>
                     <i class="fa-regular fa-folder color-gray margin-2 font-size-13"></i>
                     </div>
@@ -351,11 +353,11 @@
                 <div class="col-footer-large">
 
                     <div class="flex-row justify-center">
-                        <i class="fa-solid fa-shuffle margin-10"></i>
+                        <i class="fa-solid fa-shuffle margin-10 mobile-hide"></i>
                         <i class="fa-solid fa-backward-step margin-10"></i>
                         <i class="fa-regular fa-circle-play margin-10 font-size-30 play-hover"></i>
                         <i class="fa-solid fa-forward-step margin-10"></i>
-                        <i class="fa-solid fa-rotate-right margin-10"></i>
+                        <i class="fa-solid fa-rotate-right margin-10 mobile-hide"></i>
                     </div>
 
                     <div class="flex-row justify-center">
@@ -366,12 +368,14 @@
 
                 </div>
 
-                <div class="col-footer">
+                <div class="col-footer" id="mobile-flex-end">
 
+                    <div class="mobile-vertical">
                     <i class="fa-solid fa-list font-size-13"></i>
                     <i class="fa-solid fa-desktop margin-left-10 font-size-13"></i>
                     <i class="fa-solid fa-volume-high margin-left-10 font-size-13"></i>
-                    <input type="range" min="0" max="100" value="15" class="margin-left-right-10 width-50">
+                    </div>
+                    <input type="range" min="0" max="100" value="15" class="margin-left-right-10 width-50 input-vertical">
 
                 </div>
 
