@@ -361,6 +361,13 @@
     overflow-y: auto;
 }
 
+/*Hover*/
+
+.col-playlist img:hover{
+    filter: brightness(50%);
+    
+}
+
 /*Media query*/
 
 /*Medium*/
